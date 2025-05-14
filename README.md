@@ -211,8 +211,10 @@ O sistema inicia com um menu interativo no terminal, onde o usuário escolhe a m
 2. Converter moeda
 3. Sair
 
-Opção 1 - Exibe todas as moedas com seus respectivos códigos.
-Opção 2 - Exibe a tela para receber o codigo da moeda de origem e a moeda de destino, e um valor para conversão.
+- Opção 1 - Exibe todas as moedas com seus respectivos códigos.
+- Opção 2 - Exibe a tela para receber o codigo da moeda de origem e a moeda de destino, e um valor para conversão.
+- Opção 3 - Encerra o programa.
+
 A moeda BRL será convertida para USD A taxa de conversão é: 5.25 Valor convertido: 525.00 USD
 
 🏗 Melhorias futuras
