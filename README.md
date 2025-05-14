@@ -2,7 +2,7 @@ Conversor de Moedas 💰
 
 Este é um aplicativo Java que permite converter moedas utilizando a API ExchangeRate-API. O sistema suporta a conversão entre todas 
 as 161 moedas em circulação no mundo listadas abaixo. Elas cobrem 99% de todos os estados e territórios reconhecidos pela ONU.
-Código da Moeda
+
 <details>
 
 <summary>Tabela com todas as moedas suportadas</summary>
