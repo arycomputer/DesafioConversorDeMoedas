@@ -1,4 +1,4 @@
-Conversor de Moedas 💰
+# Conversor de Moedas 💰
 
 Este é um aplicativo Java que permite converter moedas utilizando a API ExchangeRate-API. O sistema suporta a conversão entre todas 
 as 161 moedas em circulação no mundo listadas abaixo. Elas cobrem 99% de todos os estados e territórios reconhecidos pela ONU.
@@ -172,19 +172,19 @@ ZMW|Zambian Kwacha|Zambia
 ZWL|Zimbabwean Dollar|Zimbabwe
 
 </details>
-🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 - Java (Versão 8+) 
 - Gson (Para manipulação de JSON) 
 - ExchangeRate-API (Para obter taxas de câmbio em tempo real)
 
-📌 Funcionalidades
+## 📌 Funcionalidades
 
 - Lista com todas as moedas suportadas
 - Conversão entre as 161 moedas suportadas
 - Aceita valores para conversão.
   
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ConversorMoedasApplication.java // Classe principal (menu e controle)
 
@@ -201,9 +201,29 @@ ConversorMoedasApplication.java // Classe principal (menu e controle)
 
     Clone o repositório: git clone https://github.com/seu-usuario/conversor-moedas.git
 
-🔄 Como funciona?
+## 🔄 Como funciona?
 
 O sistema inicia com um menu interativo no terminal, onde o usuário escolhe a moeda de conversão e insere o valor desejado. O programa então consulta a API de câmbio e retorna o valor convertido com a taxa aplicada.
+
+```mermaid
+flowchart TD
+        A(["inicio"])
+        A --> B{"Menu de opções"}
+        B --> C["1-Lista de Moedas (Códigos)"]
+        C --> K@{ shape: curv-trap, label: "Exibe lista de Moedas" }
+        K --> B
+        B --> D["2-Converter moeda"]
+        D --> G@{ shape: sl-rect, label: "Recebe moeda de origem" }
+        G --> H@{ shape: sl-rect, label: "Recebe moeda de Destino" }
+        H --> I@{ shape: sl-rect, label: "Recebe valor a converter" }
+        I --> J@{ shape: curv-trap, label: "Exibe resultado" }
+        J --> B
+        B --> E["3 - Sair."];
+        E --> F
+        F(["Fim"])
+
+```
+
 📌 Exemplo de saída
 
 === Conversor de Moedas ===
@@ -217,7 +237,7 @@ O sistema inicia com um menu interativo no terminal, onde o usuário escolhe a m
 
 A moeda BRL será convertida para USD A taxa de conversão é: 5.25 Valor convertido: 525.00 USD
 
-🏗 Melhorias futuras
+## 🏗 Melhorias futuras
 - Adicionar mais moedas ao sistema
 - Criar interface gráfica (GUI) para maior usabilidade
 - Permitir configuração personalizada das taxas de câmbio
